@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="./css/cartao.css">
+  <title>Formulario de pagamento</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Numero cartão</h1>
+    <article id="card-number">
+    <div>
+    <input type="text" maxlength="16" class="card-number-input">
+    <button id="btn-adicionar">Adicionar</button>
+  </div>
+</article>
+<article id="nome-card">
+  <h1>Nome</h1>
+  <div>
+  <input type="text" maxlength="16" class="nome-card-input">
+  <button id="btn-adicionar">Adicionar</button>
+</div>
+</article>
+<article id="cvv-card">
+  <h1>CVV</h1>
+  <div>
+  <input type="text" maxlength="4" class="CVV-input">
+  <button id="btn-adicionar">Adicionar</button>
+</div>
+</article>
+
+
+<article id="vencimento-card">
+  <h1>Vencimento Mês</h1>
+  <div>
+    <select name="" id="" class="month-input">
+      <option value="month" selected disabled>month</option>
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+      <option value="07">07</option>
+      <option value="08">08</option>
+      <option value="09">09</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+  </select>
+  <button id="btn-adicionar">Adicionar</button>
+</div>
+</article>
+<article id="vencimento-card">
+  <h1>Vencimento Ano</h1>
+  <div>
+    <select name="" id="" class="year-input">
+      <option value="year" selected disabled>year</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+      <option value="2026">2026</option>
+      <option value="2027">2027</option>
+      <option value="2028">2028</option>
+      <option value="2029">2029</option>
+      <option value="2030">2030</option>
+  </select>
+  <button id="btn-adicionar">Adicionar</button>
+</div>
+</article>
+
+    </main>
+
+  <div class="credit-card">
+    <div class="credit-card-front">
+        <div class="card-type">
+            Cartão de Crédito
+                
+        </div>
+
+        <img class="flag" src="./visa-logo.png">
+
+        <div class="card-number">
+          Numero do Cartão
+          
+        </div>
+        <div class="card-holder">
+            Nome
+        </div>
+        <div class="expiration">
+            Validade
+        </div>
+    </div>
+    <div class="credit-card-back">
+        <div class="stripe"></div>
+        <div class="ccv-block">
+            CVV
+        </div>
+        <div class="flag">
+            <img class="flag" src="./visa-logo.png">
+        </div>
+    </div>
+</div>
+</div>
+  <script type="module" src="./js/main.js"></script>
+  
+</body>
+
+</html>
